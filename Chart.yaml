@@ -1,0 +1,7 @@
+apiVersion: v2
+name: mylivetemps
+description: MyLiveTemps Web App
+type: application
+version: 1.0.0
+#appVersion is used to set tag version
+appVersion: 1.0.0

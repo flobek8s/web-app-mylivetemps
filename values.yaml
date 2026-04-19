@@ -1,0 +1,30 @@
+replicaCount: 1
+
+image:
+  repository: harbor.phink8s.com/library/mylivetemps
+  pullPolicy: Always
+
+namespace: web-apps
+
+deployment:
+  volumeMounts:
+    name: php-code
+    mountPath: /var/www/html 
+
+persistentVolumeClaim:
+  enabled: true
+  name: mylivetemps
+  accessModes:
+    - ReadWriteMany
+  storage: 20Mi
+  storageClassName: longhorn
+
+service:
+  service: mylivetemps
+  port: 80
+
+ingress:
+  enabled: true
+  className: traefik
+  host: temps.phink8s.com
+  secretName: wildcard-phink8s.com-tls
