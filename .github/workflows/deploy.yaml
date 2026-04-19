@@ -12,7 +12,7 @@ on:
 
 jobs:
   build:
-    runs-on: [flobek8s-runner]
+    runs-on: [flobek8s-runners]
     steps:
       - uses: actions/checkout@v5
 
