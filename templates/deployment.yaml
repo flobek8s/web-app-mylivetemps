@@ -22,6 +22,9 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - containerPort: {{ .Values.service.port }}
+          envFrom:
+            - secretRef:
+                name: {{ .Values.secretsName }}
           volumeMounts:
             - name: {{ .Values.deployment.volumeMounts.name }}
               mountPath: {{ .Values.deployment.volumeMounts.mountPath }}

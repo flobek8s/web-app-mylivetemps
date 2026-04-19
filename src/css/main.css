@@ -1,0 +1,134 @@
+/* CSS Document 
+	*Update Log
+	    - 10/07/2023 - Added <li> widths, text box font-size, body font-size
+*/
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Give+You+Glory|Special+Elite');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+/* special-elite-regular - latin */
+/* https://gwfh.mranftl.com/fonts/special-elite?subsets=latin */
+/* @font-face {
+    font-display: swap;
+    font-family: 'Special Elite';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/special-elite-v18-latin-regular.woff2') format('woff2');
+  } */
+
+body {
+    font-size: 24px;
+}
+.body_temps {
+    font-size: 14px;
+}
+/* Logo Heading change font */
+.head1 {
+    /*	font-family: 'Handlee', cursive; LIKE*/
+    /*	font-family: 'Zeyada', cursive; */
+        font-family: 'Give You Glory', cursive;
+        font-size: 20px;
+    }
+.head2 {
+    /*	font-family: 'Comfortaa', cursive; LIKE*/
+    /*	font-family: 'Yatra One', cursive;*/
+        font-family: 'Special Elite', cursive;
+        font-weight: 500;
+    }
+
+/*Form Text Box Font Size */
+input[type="text"] {
+    font-size:24px;
+}
+
+ /* <li> widths for the settings list settings.php */
+.text-display {
+    width: 250px;
+}
+.cell-display {
+    width: 225px;
+}
+.cell-name {
+    width: 125px;
+}
+.email-display {
+    width: 275px;
+}
+.email-name {
+    width: 125px;
+}
+.add-buttonz {
+    width: 400px;
+}
+.tool-tip {
+    width:50px;
+}
+.value {
+    width:75px;
+}
+.edit-icon {
+    width:75px;
+}
+
+.edit-pencil {
+    font-size: 24px;
+}
+.sensor-location {
+    width: 175px;
+}
+.sensor-romid {
+    width: 150px;
+    font-size: 18px;
+}
+.sensor-note {
+    width: 400px;
+    font-size: 15px;
+}
+
+/* Trend Icons */
+.trend-up {
+    fill: red;
+}
+.trend-down {
+    fill: blue;
+}
+.trend-flat {
+    fill: gray;
+}
+.temp-icon {
+    fill: gray;
+}
+
+/* Table Header */
+.heading-lg {
+    /* font-family: 'Comfortaa', sans-serif; */
+    font-family: 'Orbitron', sans-serif;
+    /*	font-family: 'Yatra One', cursive;*/
+        /* font-family: 'Special Elite', cursive; */
+        font-weight: 300;
+        font-size: 18px;
+    }
+.heading-sensor {
+        font-family: 'Orbitron', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+}
+.heading-datetime {
+/*	font-family: 'Comfortaa', cursive; LIKE*/
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 7px
+}
+.heading-md {
+    font-family: 'Comfortaa', sans-serif;
+    /*	font-family: 'Comfortaa', cursive; LIKE*/
+        /* font-family: 'Special Elite', cursive; */
+        /* font-family: 'Orbitron', sans-serif; */
+        font-weight: 300;
+        font-size: 18px;
+    }
+
+.temp_buffer {
+    font-size: 12px;
+}

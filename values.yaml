@@ -4,12 +4,14 @@ image:
   repository: harbor.phink8s.com/library/mylivetemps
   pullPolicy: Always
 
-namespace: web-apps
+namespace: web-app
 
 deployment:
   volumeMounts:
     name: php-code
     mountPath: /var/www/html 
+
+secretsName: mylivetemps-secrets
 
 persistentVolumeClaim:
   enabled: true
