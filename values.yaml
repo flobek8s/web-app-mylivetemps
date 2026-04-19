@@ -6,20 +6,20 @@ image:
 
 namespace: web-app
 
-deployment:
-  volumeMounts:
-    name: php-code
-    mountPath: /var/www/html 
+# deployment:
+#   volumeMounts:
+#     name: php-code
+#     mountPath: /var/www/html 
 
 secretsName: mylivetemps-secrets
 
-persistentVolumeClaim:
-  enabled: true
-  name: mylivetemps
-  accessModes:
-    - ReadWriteMany
-  storage: 20Mi
-  storageClassName: longhorn
+# persistentVolumeClaim:
+#   enabled: true
+#   name: mylivetemps
+#   accessModes:
+#     - ReadWriteMany
+#   storage: 20Mi
+#   storageClassName: longhorn
 
 service:
   service: mylivetemps

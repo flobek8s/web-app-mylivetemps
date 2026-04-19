@@ -25,10 +25,10 @@ spec:
           envFrom:
             - secretRef:
                 name: {{ .Values.secretsName }}
-          volumeMounts:
-            - name: {{ .Values.deployment.volumeMounts.name }}
-              mountPath: {{ .Values.deployment.volumeMounts.mountPath }}
-      volumes:
-        - name: {{ .Values.deployment.volumeMounts.name }}
-          persistentVolumeClaim:
-            claimName: {{ .Values.persistentVolumeClaim.name }}
+          # volumeMounts:
+          #   - name: {{ .Values.deployment.volumeMounts.name }}
+          #     mountPath: {{ .Values.deployment.volumeMounts.mountPath }}
+      # volumes:
+      #   - name: {{ .Values.deployment.volumeMounts.name }}
+      #     persistentVolumeClaim:
+      #       claimName: {{ .Values.persistentVolumeClaim.name }}
